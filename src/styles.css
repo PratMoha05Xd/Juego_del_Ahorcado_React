@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #4a4a4a;
+}
+
+input[type="text"], button {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid #dddddd;
+    font-size: 18px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, button:focus {
+    border-color: #a4c0f4;
+    outline: none;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19; 
+    border-color: #ffccbc; 
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-screen, .game-screen, .result-screen {
+    margin-bottom: 25px;
+}
+
+.letter-button {
+    background-color: #4CAF50;
+    color: white;
+    margin: 8px 5px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.letter-button:hover {
+    background-color: #388E3C;
+    transform: translateY(-3px);
+}
+
+.word-container, .attempts-container {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.won, .lost {
+    font-size: 26px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.won {
+    background-color: #28a745;
+}
+
+.lost {
+    background-color: #dc3545;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.welcome-screen, .game-screen, .result-screen {
+    animation: fadeIn 0.6s ease-in-out;
+}
