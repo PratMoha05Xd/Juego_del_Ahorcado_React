@@ -12,7 +12,7 @@ function GameScreen({ playerName, onEndGame }) {
         axios.get('https://random-word-api.herokuapp.com/word?lang=es&length=8')
             .then(response => {
                 setWord(response.data[0]);
-                console.log(response.data[0]);
+                //console.log(response.data[0]);
             })
             .catch(error => {
                 console.error("Error al obtener la palabra", error);
@@ -55,6 +55,7 @@ function GameScreen({ playerName, onEndGame }) {
                         {letter.toUpperCase()}
                     </button>
                 ))}
+                <div>{word}</div>
             </div>
         </div>
     );
